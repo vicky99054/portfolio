@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -8,95 +10,153 @@
 
 <link rel="stylesheet" href="style.css">
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
 </head>
 
 <body>
 
-<header>
+<canvas id="bg"></canvas>
+
+<nav>
+
+<h2>Vicky Kumar</h2>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+
+<section class="hero">
+
+<img src="profile.jpg" class="profile">
 
 <h1>Vicky Kumar Yadav</h1>
 
-<p>
-<span id="typing"></span>
-</p>
+<h2><span id="typing"></span></h2>
 
-<nav>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
-</nav>
+<a href="#projects" class="btn">View My Work</a>
 
-</header>
+</section>
 
-<section id="about">
+
+<section id="about" class="reveal">
 
 <h2>About Me</h2>
 
 <p>
-Java Backend Developer passionate about building scalable
-microservices using Spring Boot, Kafka and REST APIs.
+
+I am a passionate Java Backend Developer specializing in
+Spring Boot, Microservices, REST APIs, Kafka, and scalable backend systems.
+
+I enjoy building real-world backend applications like
+Smart Email Systems, Smart Inventory Systems, and Fitness Tracker APIs.
+
+My goal is to build reliable backend systems used by thousands of users.
+
 </p>
 
 </section>
 
-<section id="skills">
 
-<h2>Tech Stack</h2>
+<section id="skills" class="reveal">
 
-<div class="skills">
+<h2>Skills</h2>
 
-<span>Java</span>
-<span>Spring Boot</span>
-<span>Microservices</span>
-<span>Kafka</span>
-<span>Docker</span>
-<span>MySQL</span>
-<span>Git</span>
+<div class="skills-grid">
 
-</div>
+<div class="skill java">Java</div>
 
-</section>
+<div class="skill spring">Spring Boot</div>
 
-<section id="projects">
+<div class="skill micro">Microservices</div>
 
-<h2>Projects</h2>
+<div class="skill kafka">Kafka</div>
 
-<div class="project-card">
+<div class="skill docker">Docker</div>
 
-<h3>Healthcare Microservices</h3>
+<div class="skill mysql">MySQL</div>
 
-<p>
-Patient, Appointment, Doctor services using Kafka event streaming.
-</p>
+<div class="skill rest">REST APIs</div>
 
-</div>
-
-<div class="project-card">
-
-<h3>Smart Supply Chain</h3>
-
-<p>
-Inventory and warehouse tracking system with microservices architecture.
-</p>
-
-</div>
-
-<div class="project-card">
-
-<h3>E-commerce Backend</h3>
-
-<p>
-Spring Boot backend with JWT authentication and order management.
-</p>
+<div class="skill git">Git</div>
 
 </div>
 
 </section>
 
-<section id="github">
+
+<section id="projects" class="reveal">
+
+<h2>Featured Projects</h2>
+
+<div class="projects">
+
+<div class="project-card">
+
+<h3>Smart Email Assistant (AI Chrome Extension)</h3>
+
+<p>
+AI-powered Chrome Extension that helps users generate smart email replies,
+summaries, and suggestions using AI automation.
+</p>
+
+<p><b>Tech:</b> Java, Spring Boot, REST APIs, AI Integration</p>
+
+<a href="https://github.com/vicky99054/-Smart-Email-Assistant-AI-Powered-Chrome-Extension" target="_blank">
+View Project
+</a>
+
+</div>
+
+
+<div class="project-card">
+
+<h3>Smart Supply Chain Inventory System</h3>
+
+<p>
+Backend system for warehouse inventory tracking, stock management,
+and supply chain analytics with scalable APIs.
+</p>
+
+<p><b>Tech:</b> Java, Spring Boot, Microservices, MySQL</p>
+
+<a href="https://github.com/vicky99054/Smart-Supply-Chain-Inventory-System" target="_blank">
+View Project
+</a>
+
+</div>
+
+
+<div class="project-card">
+
+<h3>Fitness Tracker REST APIs</h3>
+
+<p>
+RESTful backend API for tracking workouts, calories burned,
+user fitness data, and health analytics.
+</p>
+
+<p><b>Tech:</b> Java, Spring Boot, REST APIs, MySQL</p>
+
+<a href="https://github.com/vicky99054/Fitness-Tracker-RestAPIs" target="_blank">
+View Project
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- <section class="github reveal">
 
 <h2>GitHub Stats</h2>
 
@@ -104,16 +164,21 @@ Spring Boot backend with JWT authentication and order management.
 
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vicky99054&layout=compact&theme=tokyonight">
 
-</section>
+</section> -->
 
-<section id="contact">
+
+<section id="contact" class="reveal">
 
 <h2>Contact</h2>
 
-<p>Email: your-email@gmail.com</p>
-<p>GitHub: github.com/vicky99054</p>
+<p>Email: vickykumar.ara10@gmail.com</p>
+<p>Phone: +91 9905456100</p>
+
+<a href="https://github.com/vicky99054" class="btn">GitHub Profile</a>
+<a href="https://www.linkedin.com/in/vicky-kumar-a659742a1/" class="btn">Linkedin Profile</a>
 
 </section>
+
 
 <footer>
 
@@ -124,4 +189,5 @@ Spring Boot backend with JWT authentication and order management.
 <script src="script.js"></script>
 
 </body>
+
 </html>
